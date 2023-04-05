@@ -1,0 +1,366 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  animation: slideInDown 1s ease;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1bf308;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease;
+  align-items: end;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 20px;
+  align-items: end;
+  justify-content:flex-end ;
+}
+
+nav a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  align-items: end;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  align-items: end;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  align-items: end;
+}
+
+footer {
+  color: #666666;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a gradient background to the body */
+body {
+  background: linear-gradient(180deg, #1b262c 0%, #0f4c75 100%);
+}
+
+/* Apply a monospace font family and default text color */
+body,
+input,
+button {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #fff;
+}
+
+/* Apply a background and padding to the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0f4c75;
+  padding: 20px;
+}
+
+/* Apply the Linux terminal header */
+.terminal-header {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.terminal-header-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.terminal-header-btn.red {
+  background-color: #ff5f56;
+}
+
+.terminal-header-btn.yellow {
+  background-color: #ffbd2e;
+}
+
+.terminal-header-btn.green {
+  background-color: #27c93f;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  animation: slideInDown 1s ease;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+	color: #0f0;
+}
+
+.nav-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.nav-list li {
+	margin: 0 10px;
+}
+
+.nav-list li a:hover {
+	color: #f00;
+}
+
+.profile {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+
+.profile-pic {
+	flex: 1 1 200px;
+	margin-right: 50px;
+}
+
+.profile-pic img {
+	width: 100%;
+	height: auto;
+}
+
+.profile-info {
+	flex: 2 1 400px;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+/* Dynamic color changing hacker theme */
+@keyframes hacker-bg {
+  0% {
+    background-color: #000000;
+  }
+  25% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #000;
+  }
+  75% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+.container {
+  animation: hacker-bg 10s infinite;
+}
+
+.profile-info h1 {  overflow: hidden; /* Prevent text from displaying outside of container */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typewriter 4s steps(50, end) 1s forwards;
+  color: rgb(5, 5, 5); /* Change color to green */
+}
+.profile-info h2 {
+  overflow: hidden; /* Prevent text from displaying outside of container */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typewriter 4s steps(50, end) 4s forwards;
+  color: rgb(3, 3, 3); /* Change color to green */
+}
+
+.profile-info h3 {
+  overflow: hidden; /* Prevent text from displaying outside of container */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typewriter 4s steps(50, end) 8s forwards;
+  color: rgb(5, 5, 5); /* Change color to green */
+}
+.profile-info h4 {
+  overflow: hidden; /* Prevent text from displaying outside of container */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typewriter 4s steps(50, end) 16s forwards;
+  color: rgb(5, 5, 5); /* Change color to green */
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+    color: green; /* Set color to inherit from parent */
+  }
+  to {
+    width: 100%;
+    color: green; /* Change color to green */
+  }
+}
