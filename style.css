@@ -309,19 +309,19 @@ footer {
 /* Dynamic color changing hacker theme */
 @keyframes hacker-bg {
   0% {
-    background-color: #000000;
+    background-color: #072d74;
   }
   25% {
-    background-color: #000;
+    background-color: hsl(219, 89%, 24%);
   }
   50% {
-    background-color: #000;
+    background-color: #072d74;
   }
   75% {
-    background-color: #000;
+    background-color: #072d74;
   }
   100% {
-    background-color: #000;
+    background-color: #072d74;
   }
 }
 
@@ -332,26 +332,26 @@ footer {
 .profile-info h1 {  overflow: hidden; /* Prevent text from displaying outside of container */
   white-space: nowrap; /* Prevent line breaks */
   animation: typewriter 4s steps(50, end) 1s forwards;
-  color: rgb(5, 5, 5); /* Change color to green */
+  color: hsl(219, 89%, 24%); /* Change color to green */
 }
 .profile-info h2 {
   overflow: hidden; /* Prevent text from displaying outside of container */
   white-space: nowrap; /* Prevent line breaks */
-  animation: typewriter 4s steps(50, end) 4s forwards;
-  color: rgb(3, 3, 3); /* Change color to green */
+  animation: typewriter 4s steps(50, end) 3s forwards;
+  color: hsl(219, 89%, 24%); /* Change color to green */
 }
 
 .profile-info h3 {
   overflow: hidden; /* Prevent text from displaying outside of container */
   white-space: nowrap; /* Prevent line breaks */
-  animation: typewriter 4s steps(50, end) 8s forwards;
-  color: rgb(5, 5, 5); /* Change color to green */
+  animation: typewriter 4s steps(50, end) 6s forwards;
+  color: hsl(219, 89%, 24%); /* Change color to green */
 }
 .profile-info h4 {
   overflow: hidden; /* Prevent text from displaying outside of container */
   white-space: nowrap; /* Prevent line breaks */
-  animation: typewriter 4s steps(50, end) 16s forwards;
-  color: rgb(5, 5, 5); /* Change color to green */
+  animation: typewriter 4s steps(50, end) 8s forwards;
+  color: hsl(219, 89%, 24%); /* Change color to green */
 }
 
 @keyframes typewriter {
@@ -363,4 +363,24 @@ footer {
     width: 100%;
     color: green; /* Change color to green */
   }
+}
+.icons img {
+  width: 50px;
+  height: 50px;
+  
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.icons li {
+  margin: 10px 10px;
+}
+.icons img {
+  margin-right: 10px;
+}
+.icons a:hover {
+  transform: scale(1.2);
 }
