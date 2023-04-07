@@ -132,54 +132,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* Apply a gradient background to the body */
-body {
-  background: linear-gradient(180deg, #1b262c 0%, #0f4c75 100%);
-}
-
-/* Apply a monospace font family and default text color */
-body,
-input,
-button {
-  font-family: 'Ubuntu Mono', monospace;
-  color: #fff;
-}
-
-/* Apply a background and padding to the container */
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #0f4c75;
-  padding: 20px;
-}
-
-/* Apply the Linux terminal header */
-.terminal-header {
-  display: flex;
-  align-items: center;
-  height: 20px;
-}
-
-.terminal-header-btn {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.terminal-header-btn.red {
-  background-color: #ff5f56;
-}
-
-.terminal-header-btn.yellow {
-  background-color: #ffbd2e;
-}
-
-.terminal-header-btn.green {
-  background-color: #27c93f;
-}
-
 
 header {
   display: flex;
@@ -238,7 +190,10 @@ header {
 }
 
 body {
-	background-color: #000;
+  background-image: linear-gradient(200deg, hsla(187, 100%, 69%, 1), hsla(187, 100%, 69%, 0) 70%), linear-gradient(130deg, hsla(300, 100%, 69%, 1), hsla(300, 100%, 69%, 0) 70%), linear-gradient(330deg, hsla(0, 100%, 69%, 1), hsla(0, 100%, 69%, 0) 70%);
+    background-repeat:initial;
+    background-size: cover;
+
 	color: #fff;
 	font-family: 'Courier New', Courier, monospace;
 }
@@ -306,25 +261,6 @@ footer {
 	text-align: center;
 }
 
-/* Dynamic color changing hacker theme */
-@keyframes hacker-bg {
-  0% {
-    background-color: #072d74;
-  }
-  25% {
-    background-color: hsl(219, 89%, 24%);
-  }
-  50% {
-    background-color: #072d74;
-  }
-  75% {
-    background-color: #072d74;
-  }
-  100% {
-    background-color: #072d74;
-  }
-}
-
 .container {
   animation: hacker-bg 10s infinite;
 }
@@ -383,4 +319,146 @@ footer {
 }
 .icons a:hover {
   transform: scale(1.2);
+}
+/* Featured Tab Container */
+.featured-tab-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Featured Tab Scroll */
+.featured-tab-scroll {
+  display: flex;
+  animation-name: scroll;
+}
+
+/* Featured Tab */
+.featured-tab {
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+/* Keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.featured-tab-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-tab-scroll {
+  display: flex;
+  width: 100%;
+  position: relative;
+   transition: transform 0.5s ease; /* added transition property */
+}
+
+.featured-tab {
+  flex: 1 0 300px;
+  height: 100px;
+  margin-right: 10px;
+  background-color: #ccc;
+  text-align: center;
+  font-size: 24px;
+  line-height: 100px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  height: 150px;
+}
+
+#scroll-left {
+  left: 0;
+}
+
+#scroll-right {
+  right: 0;
+}
+
+.featured-tab-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-tab-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.featured-tab {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #555;
+  transform: rotate(0);
+  background-color: #0056b3;
+  
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.button.right {
+  margin-left: auto;
+}
+.featured-tab-container .scroll-button {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.featured{
+  -ms-flex-align: center;
 }

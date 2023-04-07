@@ -6,6 +6,12 @@ main {
 }
 
 /* Style the headings */
+body{
+  background-image: linear-gradient(200deg, hsla(187, 100%, 69%, 1), hsla(187, 100%, 69%, 0) 70%), linear-gradient(130deg, hsla(300, 100%, 69%, 1), hsla(300, 100%, 69%, 0) 70%), linear-gradient(330deg, hsla(0, 100%, 69%, 1), hsla(0, 100%, 69%, 0) 70%);
+    background-repeat:initial;
+    background-size: cover;
+}
+
 h1 {
   font-size: 36px;
   font-weight: bold;
